@@ -1,16 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
-    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-    h1 { color: #4CAF50; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-left: 4px solid #4CAF50;
+      padding-left: 12px;
+    }
+    .project-group {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+    a {
+      color: #4CAF50;
+    }
   </style>
 </head>
 <body>
-  <h1>Bienvenue sur mon portfolio 👋</h1>
-  <p>Développeuse IT · Cheffe de projet · Consultante</p>
+  <header>
+    <h1>Laurine Dupont</h1>
+    <p>Développeuse IT · Cheffe de projet · Consultante numérique</p>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>À propos</h2>
+    <p>Profil hybride tech & gestion, j'accompagne les organisations dans la création, le pilotage et l’optimisation de leurs projets numériques. Mon approche : allier écoute, agilité et expertise technique.</p>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Compétences</h2>
+    <ul>
+      <li><strong>Techniques :</strong> HTML, CSS, JavaScript, Git, GitHub, React</li>
+      <li><strong>Gestion de projet :</strong> Agile / Scrum, Trello, Jira, communication inter-équipes</li>
+      <li><strong>Conseil :</strong> Conduite du changement, audit, stratégie numérique</li>
+    </ul>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projets</h2>
+
+    <div class="project-group">
+      <h3>💻 Développement</h3>
+      <p><strong>Site vitrine responsive</strong> – HTML/CSS/JS – Création d’un site pour une association (design + code)</p>
+    </div>
+
+    <div class="project-group">
+      <h3>📋 Gestion de projet</h3>
+      <p><strong>Refonte d’une plateforme interne</strong> – coordination de 4 devs, gestion du backlog, suivi des KPIs</p>
+    </div>
+
+    <div class="project-group">
+      <h3>🤝 Conseil</h3>
+      <p><strong>Accompagnement à la transition numérique</strong> – diagnostic des besoins, préconisations d’outils</p>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:laurine@example.com">laurine@example.com</a></p>
+    <p>💼 <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Laurine Dupont · Portfolio GitHub Pages</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
